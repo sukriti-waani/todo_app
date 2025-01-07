@@ -1,0 +1,68 @@
+body {
+  font-family: Arial;
+}
+
+#main-heading {
+  color: rgb(51, 5, 148);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: aquamarine;
+  /* display: flex; */
+  text-align: center;
+  /* justify-content: center; */
+  border-radius: 20px;
+  border-color: rgb(250, 173, 20);
+  border: dashed;
+  width: 600px;
+  margin-left: 330px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 40px;
+  margin-left: 370px;
+  align-items: center;
+}
+
+#todo-input, #todo-date{
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 10px 5px;
+}
+
+.btn-delete {
+  background-color: rgb(117, 5, 5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+.btn-todo {
+  margin-top: 20px;
+  background-color: rgb(12, 135, 104);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+.btn-todo,.btn-delete:hover {
+  background-color: rgb(138, 140, 145);
+}
+
+.btn-todo,.btn-delete:active {
+  background-color: rgb(236, 110, 31);
+}
+
+#todo-input, #todo-date:hover {
+  background-color: rgb(248, 236, 173);
+}
+
+#todo-input, #todo-date:active {
+  background-color: burlywood;
+}
